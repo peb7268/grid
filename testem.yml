@@ -1,0 +1,14 @@
+framework:
+- jasmine
+launchers:
+    integration:
+        command: "rspec spec/integration"
+    headless:
+        command: "HEADLESS=1 rspec spec/integration"
+src_files:
+- spec/integration/*.rb
+- spec/GlobalSpec.js
+test_page: SpecRunner.html
+launch_in_dev:
+#- headless
+- Chrome
